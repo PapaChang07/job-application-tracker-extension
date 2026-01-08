@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Job Tracker Helper (Learning Version)",
+  "version": "1.0.0",
+  "description": "Practice extension to capture current tab info.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab"]
+}
