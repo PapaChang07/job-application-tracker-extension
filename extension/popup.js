@@ -1,4 +1,5 @@
 // import { title } from "process";
+const API_URL = "https://job-application-tracker-backend-production-64ef.up.railway.app";
 
 document.addEventListener("DOMContentLoaded", () => {
     const titleInput = document.getElementById("title");
@@ -27,8 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
         statusInput.textContent = "Logged to console";
 
         try {
-            const response = await fetch("http://localhost:5000/jobs", {
-                method: "Post",
+            const response = await fetch(`${API_URL}/jobs`, {
+                method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
@@ -39,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 statusInput.textContent = "Saved";
             } 
             else {
-                statusInput.textContent = "Failed";
+                statusInput.textContent =  `Failed (${response.status})`;
             }
         }
         catch (err) {
