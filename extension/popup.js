@@ -1,5 +1,5 @@
 // import { title } from "process";
-const API_URL = "https://job-application-tracker-backend-production-64ef.up.railway.app";
+const API_URL = "https://job-application-tracker-backend-j8xs.onrender.com";
 
 document.addEventListener("DOMContentLoaded", () => {
     const titleInput = document.getElementById("title");

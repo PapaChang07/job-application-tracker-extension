@@ -7,6 +7,6 @@
   },
   "permissions": ["tabs"],
   "host_permissions": [
-    "https://job-application-tracker-backend-production-64ef.up.railway.app/*"
+    "https://job-application-tracker-backend-j8xs.onrender.com"
   ]
 }
